@@ -1,0 +1,90 @@
+<Project>
+  <PropertyGroup>
+    <!--宏定义-->
+    <DefineConstants>$(DefineConstants)UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2018_4_14;UNITY_2018_4;UNITY_2018;UNITY_2019_1_OR_NEWER;UNITY_2019;</DefineConstants>
+  </PropertyGroup>
+  
+  <!--必须引用-->
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>$(MSBuildThisFileDirectory)\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+	  <Reference Include="UnityEngine.AnimationModule">
+		  <HintPath>$(MSBuildThisFileDirectory)\UnityEngine.AnimationModule.dll</HintPath>
+		  <Private>false</Private>
+	  </Reference>
+	  <Reference Include="UnityEngine.AssetBundleModule">
+		  <HintPath>$(MSBuildThisFileDirectory)\UnityEngine.AssetBundleModule.dll</HintPath>
+		  <Private>false</Private>
+	  </Reference>
+	  <Reference Include="UnityEngine.AudioModule">
+		  <HintPath>$(MSBuildThisFileDirectory)\UnityEngine.AudioModule.dll</HintPath>
+		  <Private>false</Private>
+	  </Reference>
+	  <Reference Include="UnityEngine.CoreModule">
+		  <HintPath>$(MSBuildThisFileDirectory)\UnityEngine.CoreModule.dll</HintPath>
+		  <Private>false</Private>
+	  </Reference>
+	  <Reference Include="UnityEngine.ParticleSystemModule">
+		  <HintPath>$(MSBuildThisFileDirectory)\UnityEngine.ParticleSystemModule.dll</HintPath>
+		  <Private>false</Private>
+	  </Reference>
+	  <Reference Include="UnityEngine.UIModule">
+		  <HintPath>$(MSBuildThisFileDirectory)\UnityEngine.UIModule.dll</HintPath>
+		  <Private>false</Private>
+	  </Reference>
+	  <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+		  <HintPath>$(MSBuildThisFileDirectory)\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+		  <Private>false</Private>
+	  </Reference>
+	  <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+		  <HintPath>$(MSBuildThisFileDirectory)\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+		  <Private>false</Private>
+	  </Reference>
+	  <Reference Include="UnityEngine.UnityWebRequestModule">
+		  <HintPath>$(MSBuildThisFileDirectory)\UnityEngine.UnityWebRequestModule.dll</HintPath>
+		  <Private>false</Private>
+	  </Reference>
+	  <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+		  <HintPath>$(MSBuildThisFileDirectory)\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+		  <Private>false</Private>
+	  </Reference>
+	  <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+		  <HintPath>$(MSBuildThisFileDirectory)\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+		  <Private>false</Private>
+	  </Reference>
+	  <Reference Include="UnityEngine.PhysicsModule">
+		  <HintPath>$(MSBuildThisFileDirectory)\UnityEngine.PhysicsModule.dll</HintPath>
+		  <Private>false</Private>
+	  </Reference>
+	  <Reference Include="UnityEngine.IMGUIModule">
+		  <HintPath>$(MSBuildThisFileDirectory)\UnityEngine.IMGUIModule.dll</HintPath>
+		  <Private>false</Private>
+	  </Reference>
+	  <Reference Include="UnityEngine.TextRenderingModule">
+		  <HintPath>$(MSBuildThisFileDirectory)\UnityEngine.TextRenderingModule.dll</HintPath>
+		  <Private>false</Private>
+	  </Reference>
+	  <Reference Include="UnityEngine.UI">
+		  <HintPath>$(MSBuildThisFileDirectory)\UnityEngine.UI.dll</HintPath>
+		  <Private>false</Private>
+	  </Reference>
+	   <Reference Include="UnityEngine.JSONSerializeModule">
+		  <HintPath>$(MSBuildThisFileDirectory)\UnityEngine.JSONSerializeModule.dll</HintPath>
+		  <Private>false</Private>
+	  </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>$(MSBuildThisFileDirectory)\UnityEngine.ImageConversionModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  
+  <!--编辑器引用-->
+  <ItemGroup Condition="$(IsEditor) == true">
+    <Reference Include="UnityEditor">
+      <HintPath>$(MSBuildThisFileDirectory)\UnityEditor.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,31 @@
+<Project>
+  <PropertyGroup>
+    <!--宏定义-->
+    <DefineConstants>$(DefineConstants)UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2018_4_14;UNITY_2018_4;UNITY_2018;</DefineConstants>
+    <UnityLibDir>$(MSBuildThisFileDirectory)</UnityLibDir>
+  </PropertyGroup>
+  
+  <!--必须引用-->
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>$(MSBuildThisFileDirectory)\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>$(MSBuildThisFileDirectory)\UnityEngine.UI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  
+  <!--编辑器引用-->
+  <ItemGroup Condition="$(IsEditor) == true">
+    <Reference Include="UnityEditor">
+      <HintPath>$(MSBuildThisFileDirectory)\UnityEditor.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>$(MSBuildThisFileDirectory)\UnityEditor.UI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>
